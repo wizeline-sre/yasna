@@ -1,0 +1,9 @@
+name: 'yasna'
+description: 'Yet Another Slack Notifier Action'
+author: 'Wizeline SRE Team'
+runs:
+  using: 'docker'
+  image: 'docker://docker.pkg.github.com/wizeline-sre/yasna/yasna:1.0.0'
+branding:
+  icon: 'check-square'
+  color: 'green'
