@@ -1,12 +1,11 @@
-SERVER=docker.pkg.github.com
-OWNER=wizeline-sre
+SERVER=docker.io
+OWNER=wizelinedevops
 REPOSITORY=yasna
-IMAGE_NAME=yasna
 VERSION := $(shell cat version)
-FULL_NAME=$(SERVER)/$(OWNER)/$(REPOSITORY)/$(IMAGE_NAME):$(VERSION)
+FULL_NAME=$(SERVER)/$(OWNER)/$(REPOSITORY):$(VERSION)
 
 build:
-	@docker build -t $(FULL_NAME) .
+	@docker build --no-cache -t $(FULL_NAME) .
 
 push:
 	@docker push $(FULL_NAME)
