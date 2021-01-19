@@ -15,6 +15,15 @@ Include it as a step in your workflow file
         GITHUB_TOKEN: ${{ github.token }}
       uses: wizeline-sre/yasna@main
 ```
+
+```yaml
+- name: Notification
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        STATUS: ${{ job.status }}
+        GITHUB_TOKEN: ${{ github.token }}
+      uses: wizeline-sre/yasna@main
+```
 ![Yasna Slack message of a failed workflow](./docs/yasna_failure.png "Yasna Failure")
 
 ![Yasna Slack message of a succeeded workflow](./docs/yasna_success.png "Yasna Success")
