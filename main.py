@@ -21,6 +21,8 @@ class Status(Enum):
 
     success = "#36B37E"
     fail = "#FF5630"
+    failure = "#FF5630"
+    cancelled = "#CDCDCD"
 
 
 class Yasna:
