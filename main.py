@@ -66,7 +66,7 @@ class Yasna:
         origin = {
             "title": "Branch",
             "ref": config.ref,
-            "url": f"{config.base_url}/{config.sha}",
+            "url": f"{config.base_url}/commit/{config.sha}",
         }
         logger.debug("event type is %s", config.event)
         if config.event == "pull_request":
