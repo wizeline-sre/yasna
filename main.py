@@ -54,7 +54,7 @@ class Yasna:
         """
         logger.info("setting up footer information")
         return {
-            "footer": "<https://wizeline.com|Powered by Wizeline SRE Team>",
+            "footer": "<https://www.wizeline.com|Powered by Wizeline SRE Team>",
             "footer_icon": "https://www.wizeline.com/favicon.ico",
         }
 
@@ -66,7 +66,7 @@ class Yasna:
         origin = {
             "title": "Branch",
             "ref": config.ref,
-            "url": f"{config.base_url}/{config.sha}",
+            "url": f"{config.base_url}/commit/{config.sha}",
         }
         logger.debug("event type is %s", config.event)
         if config.event == "pull_request":
