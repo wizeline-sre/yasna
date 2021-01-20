@@ -54,7 +54,7 @@ class Yasna:
         """
         logger.info("setting up footer information")
         return {
-            "footer": "<https://wizeline.com|Powered by Wizeline SRE Team>",
+            "footer": "<https://www.wizeline.com|Powered by Wizeline SRE Team>",
             "footer_icon": "https://www.wizeline.com/favicon.ico",
         }
 
