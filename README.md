@@ -47,4 +47,4 @@ For local development:
 1. Start Coding!
 
 ## License
-This terraform module is distributed under the [MIT License ](https://opensource.org/licenses/MIT), see [LICENSE](./LICENSE) for more information.
+This Github Action is distributed under the [MIT License ](https://opensource.org/licenses/MIT), see [LICENSE](./LICENSE) for more information.
