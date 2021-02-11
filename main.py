@@ -48,6 +48,17 @@ class Yasna:
         }
 
     @classmethod
+    def get_title(cls):
+        """
+        Returns a dictionary with the title information.
+        """
+        logger.info("setting up title information")
+        return {
+            "title": config.repo,
+            "title_link": config.base_url,
+        }
+
+    @classmethod
     def get_footer(cls):
         """
         Returns a dictionary with the footer information
@@ -121,6 +132,7 @@ class Yasna:
         """
 
         attachment = {
+            **self.get_title(),
             "color": Status[config.build_status].value,
             **self.get_author(),
             "fields": self.get_fields(),
